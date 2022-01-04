@@ -1,0 +1,21 @@
+n = int(input())
+currRow = 1
+while currRow <= n:
+    spaces = 1
+    while spaces <= (n - currRow) :
+        print(" ", end = "")
+        spaces += 1
+    currCol = 1
+    valToPrint = currRow
+    while currCol <= currRow :
+        print(valToPrint, end = "")
+        valToPrint += 1
+        currCol += 1
+    currCol = 1
+    valToPrint = 2 * currRow - 2 
+    while currCol <= currRow - 1 :
+        print(valToPrint, end = "")
+        valToPrint -= 1
+        currCol += 1 
+    print()
+    currRow += 1
